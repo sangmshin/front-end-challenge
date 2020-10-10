@@ -1,10 +1,10 @@
 import React from 'react';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    Hello Thinx
+  </div>
+)
 
 export default App;
