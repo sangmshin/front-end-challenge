@@ -1,10 +1,6 @@
 import React from 'react';
-import './App.scss';
+import 'globals.scss';
 
-const App = () => (
-  <div>
-    Hello Thinx
-  </div>
-)
+const App = () => <>Hello Thinx</>;
 
 export default App;
