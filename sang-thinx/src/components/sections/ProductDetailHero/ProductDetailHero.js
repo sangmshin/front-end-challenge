@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import ProductDetailHeroDesc from './ProductDetailHeroDesc';
+import ProductDetailHeroInfo from './ProductDetailHeroInfo';
 import styles from './ProductDetailHero.module.scss';
 
 const ProductDetailHero = ({
@@ -27,7 +27,7 @@ const ProductDetailHero = ({
           {renderSlides()}
         </Slider>
       }
-      <ProductDetailHeroDesc {...otherProps} />
+      <ProductDetailHeroInfo {...otherProps} />
     </section>
   )
 }

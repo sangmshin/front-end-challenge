@@ -38,7 +38,10 @@
       "xlarge",
       "xxlarge"
     ],
-    "saving_discount": true
+    "savings": {
+      "label": "build a cycle set and save up to 20%",
+      "url": ""
+    }
   },
   "best_sellers": [
     {

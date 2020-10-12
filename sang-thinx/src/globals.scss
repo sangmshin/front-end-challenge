@@ -18,6 +18,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  line-height: 1.5rem;
+
+  h1, h2, h3 {
+    letter-spacing: 6px;
+  }
+
+  p {
+    letter-spacing: 1.5px;
+  }
+
+  button {
+    cursor: pointer;
+  }
 }
 
 section, .slick-slider:focus {

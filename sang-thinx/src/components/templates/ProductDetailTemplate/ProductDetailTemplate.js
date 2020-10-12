@@ -6,9 +6,8 @@ import { ProductDetailHero } from 'components/sections';
 import { getPageData } from 'store/page-data/selectors';
 
 const ProductDetailTemplate = ({ pageData }) => {
-  if (!pageData) return null;
-
   const heroData = idx(pageData, _ => _.hero)
+  if (!pageData || !heroData) return null;
 
   return (
     <main>

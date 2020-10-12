@@ -1,0 +1,26 @@
+.root {
+  border: 1px solid black;
+  display: flex;
+  
+  & > * {
+    letter-spacing: 2px;
+    flex: 1;
+    padding: 3px 15px;
+    font-size: 1rem;
+  }
+
+  .color-button {
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .check-mark {
+    margin-left: 5px;
+    display: flex;
+
+    svg {
+      width: 15px;
+    }
+  }
+}
