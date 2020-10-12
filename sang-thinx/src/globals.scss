@@ -17,6 +17,7 @@ body {
   font-family: 'Graphik-Medium', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 section, .slick-slider:focus {
@@ -24,5 +25,14 @@ section, .slick-slider:focus {
 
   & *:focus{
     outline: none;
+  }
+}
+
+ul.slick-dots li {
+  margin: 0 15px;
+
+  button:before {
+    font-size: 12px;
+    opacity: 0.5;
   }
 }

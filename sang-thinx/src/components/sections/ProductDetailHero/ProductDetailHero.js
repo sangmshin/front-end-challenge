@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import ProductDetailHeroDesc from './ProductDetailHeroDesc';
+import styles from './ProductDetailHero.module.scss';
 
 const ProductDetailHero = ({
   images,
@@ -20,7 +21,7 @@ const ProductDetailHero = ({
   };
 
   return (
-    <section>
+    <section className={styles.root}>
       {images &&
         <Slider {...config}>
           {renderSlides()}
