@@ -4,22 +4,22 @@
   "hero": {
     "images": [
       {
-        "src": "/static/media/highwaist_black_front_01_1024x1024.f2afa60f.jpg", "alt": "Hi-Waist front 1"
+        "src": "https://thinx-assets.s3.amazonaws.com/highwaist_black_front_01_1024x1024.jpg", "alt": "Hi-Waist front 1"
       },
       {
-        "src": "/static/media/highwaist_black_front_02_1024x1024.c7952b58.jpg", "alt": "Hi-Waist front 2"
+        "src": "https://thinx-assets.s3.amazonaws.com/highwaist_black_front_02_1024x1024.jpg", "alt": "Hi-Waist front 2"
       },
       {
-        "src": "/static/media/highwaist_black_front_03_1024x1024.36b1121f.jpg", "alt": "Hi-Waist front 3"
+        "src": "https://thinx-assets.s3.amazonaws.com/highwaist_black_front_03_1024x1024.jpg", "alt": "Hi-Waist front 3"
       },
       {
-        "src": "/static/media/highwaist_black_front_04_1024x1024.046f06d4.jpg", "alt": "Hi-Waist front 4"
+        "src": "https://thinx-assets.s3.amazonaws.com/highwaist_black_front_04_1024x1024.jpg", "alt": "Hi-Waist front 4"
       },
       {
-        "src": "/static/media/highwaist_black_side_1024x1024.4c4e4d2c.jpg", "alt": "Hi-Waist side"
+        "src": "https://thinx-assets.s3.amazonaws.com/highwaist_black_side_1024x1024.jpg", "alt": "Hi-Waist side"
       },
       {
-        "src": "/static/media/highwaist_black_back_1024x1024.0219d57a.jpg", "alt": "Hi-Waist back"
+        "src": "https://thinx-assets.s3.amazonaws.com/highwaist_black_back_1024x1024.jpg", "alt": "Hi-Waist back"
       }
     ],
     "product_title": "Hi - Waist",
@@ -38,6 +38,7 @@
       "xlarge",
       "xxlarge"
     ],
+    "size_chart": true,
     "savings": {
       "label": "build a cycle set and save up to 20%",
       "url": ""
@@ -47,27 +48,27 @@
     {
       "product_title": "Hiphugger",
       "product_droplets": "heavy days",
-      "image": "/static/media/best_seller_1.901ae99f.jpg"
+      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_1.jpg"
     },
     {
       "product_title": "Cheeky",
       "product_droplets": "light days",
-      "image": "/static/media/best_seller_2.f91c6342.jpg"
+      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_2.jpg"
     },
     {
       "product_title": "Thong",
       "product_droplets": "lightest days",
-      "image": "/static/media/best_seller_3.c01cf860.jpg"
+      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_3.jpg"
     },
     {
       "product_title": "Sport",
       "product_droplets": "medium days",
-      "image": "/static/media/best_seller_4.299d151f.jpg"
+      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_4.jpg"
     },
     {
       "product_title": "Boyshort",
       "product_droplets": "light days",
-      "image": "/static/media/best_seller_5.b808aa65.jpg"
+      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_5.jpg"
     }
   ]
 }

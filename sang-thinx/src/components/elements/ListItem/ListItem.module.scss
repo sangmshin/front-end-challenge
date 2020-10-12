@@ -1,0 +1,15 @@
+@import 'variables';
+
+.item {
+  width: 100%;
+  text-align: left;
+  padding: 13px 17px;
+
+  &:hover {
+    background-color: $primary-beige;
+  }
+}
+
+.selected {
+  background-color: $primary-beige;
+}

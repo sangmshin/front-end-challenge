@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+
+  .caret {
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease-out;
+
+    &.open {
+      transform: rotateX(180deg);
+    }
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      border-top: 6px solid #000;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      right: 7px;
+      border-top: 6px solid #f8f8f8;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+  }
+}

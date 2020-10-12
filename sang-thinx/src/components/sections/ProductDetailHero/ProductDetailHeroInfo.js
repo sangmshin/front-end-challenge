@@ -3,8 +3,12 @@ import { array, shape, string } from 'prop-types';
 import styles from './ProductDetailHeroInfo.module.scss';
 import {
   ColorSelector,
-  QuantitySelector
+  QuantitySelector,
+  Link,
+  Dropdown,
+  // DropdownButton
 } from 'components/elements';
+import { SIZE_CHART_TEXT } from 'core/constants';
 
 const ProductDetailHeroInfo = ({
   product_title: title,
@@ -13,6 +17,7 @@ const ProductDetailHeroInfo = ({
   price,
   available_colors: availableColors,
   available_sizes: availableSizes,
+  size_chart: sizeChart, 
   savings,
 }) => {
   return (
@@ -26,6 +31,14 @@ const ProductDetailHeroInfo = ({
         <h2 className={styles.price}>${price}</h2>
         <ColorSelector colors={availableColors} />
         <QuantitySelector />
+        <Dropdown
+          className={styles['size-dropdown']}
+          items={availableSizes}
+          type='size'
+        />
+        {sizeChart &&
+          <Link className={styles['size-chart']}>{SIZE_CHART_TEXT}</Link>
+        }
       </div>
     </div>
   )
@@ -36,7 +49,7 @@ ProductDetailHeroInfo.propTypes = {
   product_droplets: string.isRequired,
   description: string.isRequired,
   price: string.isRequired,
-  available_colors: array,
+  available_colors: array.isRequired,
   available_sizes: array.isRequired,
   savings: shape({
     label: string,
@@ -45,7 +58,6 @@ ProductDetailHeroInfo.propTypes = {
 }
 
 ProductDetailHeroInfo.defaultProps = {
-  available_colors: [],
   savings: null
 }
 

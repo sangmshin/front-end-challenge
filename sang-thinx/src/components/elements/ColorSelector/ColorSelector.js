@@ -25,7 +25,7 @@ const ColorSelector = ({ colors }) => {
     const isSelected = selectedColor === color;
     const textColor = color === 'black' ? 'white' : 'black';
     const checkMark = (
-      <span className={styles['check-mark']}>
+      <span className={styles['check-mark']} aria-label='CheckMark Icon'>
         <svg
           style={{fill: textColor}}
           xmlns="http://www.w3.org/2000/svg"

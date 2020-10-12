@@ -14,12 +14,13 @@ const QuantitySelector = () => {
       <Button
         ariaLabel='decrease selected quantity'
         className={styles['decrease-button']}
-        onClick={decreaseQuantity}
         disabled={disabledDecreaseButton}
+        onClick={decreaseQuantity}
+        role='presentation'
       >
         -
       </Button>
-      <span className={styles['quantity-text']}>
+      <span className={styles['quantity-text']} role='presentation'>
         quantity ( 
         <input
           className={styles.number}
@@ -33,8 +34,9 @@ const QuantitySelector = () => {
       <Button
         ariaLabel='increase selected quantity'
         className={styles['increase-button']}
-        onClick={increaseQuantity}
         disabled={disabledIncreaseButton}
+        onClick={increaseQuantity}
+        role='presentation'
       >
         +
       </Button>

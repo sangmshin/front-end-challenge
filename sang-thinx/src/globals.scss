@@ -19,6 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   line-height: 1.5rem;
+  color: $type-black;
 
   h1, h2, h3 {
     letter-spacing: 6px;
@@ -28,10 +29,36 @@ body {
     letter-spacing: 1.5px;
   }
 
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: unset;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+
   button {
     cursor: pointer;
-    border: none;
     background: none;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .accessible {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
   }
 }
 
@@ -43,11 +70,6 @@ section, .slick-slider:focus {
   }
 }
 
-ul.slick-dots li {
-  margin: 0 15px;
-
-  button:before {
-    font-size: 12px;
-    opacity: 0.5;
-  }
+ul.slick-dots li button:before {
+  opacity: 0.5;
 }

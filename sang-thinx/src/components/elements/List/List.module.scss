@@ -1,0 +1,10 @@
+@import 'variables';
+
+.root {
+  position: absolute;
+  border: 1px solid black;
+  width: 100%;
+  top: 24px;
+  left: -1px;
+  background-color: $primary-lightgrey;
+}
