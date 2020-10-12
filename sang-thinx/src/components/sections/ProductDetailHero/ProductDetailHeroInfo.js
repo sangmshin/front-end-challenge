@@ -1,7 +1,10 @@
 import React from 'react';
 import { array, shape, string } from 'prop-types';
 import styles from './ProductDetailHeroInfo.module.scss';
-import { ColorSelector } from 'components/elements';
+import {
+  ColorSelector,
+  QuantitySelector
+} from 'components/elements';
 
 const ProductDetailHeroInfo = ({
   product_title: title,
@@ -19,9 +22,10 @@ const ProductDetailHeroInfo = ({
         <p className={styles.droplets}>{droplets}</p>
         <p className={styles.description}>{description}</p>
       </div>
-      <div className={styles['variations-container']}>
+      <div className={styles['options-container']}>
         <h2 className={styles.price}>${price}</h2>
         <ColorSelector colors={availableColors} />
+        <QuantitySelector />
       </div>
     </div>
   )

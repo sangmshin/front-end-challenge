@@ -1,16 +1,16 @@
 .root {
   border: 1px solid black;
   display: flex;
+  margin-top: 20px;
   
   & > * {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     flex: 1;
     padding: 3px 15px;
     font-size: 1rem;
   }
 
   .color-button {
-    border: none;
     display: flex;
     align-items: center;
   }

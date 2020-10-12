@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { bool, func, node, object, oneOfType, string } from 'prop-types';
 import cx from 'classnames';
 import styles from './Button.module.scss';
 
-const Button = ({
+const Button = forwardRef(({
   accessibleText,
+  ariaLabel,
   children,
   className,
   disabled,
   onClick,
   role,
   style
-}) => {
+}, ref) => {
   const clickHandler = e => onClick && onClick(e);
 
   return (
     <button
+      ref={ref}
+      aria-label={ariaLabel}
       className={cx('btn', className)}
       onClick={clickHandler}
       disabled={disabled}
@@ -26,7 +29,7 @@ const Button = ({
       {accessibleText && <span className={styles.accessible}>{accessibleText}</span>}
     </button>
   )
-}
+})
 
 Button.propTypes = {
   accessibleText: string,
