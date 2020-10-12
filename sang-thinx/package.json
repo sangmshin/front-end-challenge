@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
+    "idx": "^2.5.6",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

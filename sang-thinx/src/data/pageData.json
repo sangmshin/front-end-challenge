@@ -1,0 +1,70 @@
+
+{
+  "template": "product-detail",
+  "hero": {
+    "images": [
+      {
+        "src": "/static/media/highwaist_black_front_01_1024x1024.f2afa60f.jpg", "alt": "Hi-Waist front 1"
+      },
+      {
+        "src": "/static/media/highwaist_black_front_02_1024x1024.c7952b58.jpg", "alt": "Hi-Waist front 2"
+      },
+      {
+        "src": "/static/media/highwaist_black_front_03_1024x1024.36b1121f.jpg", "alt": "Hi-Waist front 3"
+      },
+      {
+        "src": "/static/media/highwaist_black_front_04_1024x1024.046f06d4.jpg", "alt": "Hi-Waist front 4"
+      },
+      {
+        "src": "/static/media/highwaist_black_side_1024x1024.4c4e4d2c.jpg", "alt": "Hi-Waist side"
+      },
+      {
+        "src": "/static/media/highwaist_black_back_1024x1024.0219d57a.jpg", "alt": "Hi-Waist back"
+      }
+    ],
+    "product_title": "Hi - Waist",
+    "product_droplets": "Heavy days. Holds up to 2 tampon's worth",
+    "description": "The phrase \"treat yo'self\" reaches new belly-button brushing heights with the Hi-Waist, and it's here just in time for cuffing season.",
+    "price": "35.00",
+    "available_colors": [
+      "black",
+      "beige"
+    ],
+    "available_sizes": [
+      "xsmall",
+      "small",
+      "medium",
+      "large",
+      "xlarge",
+      "xxlarge"
+    ],
+    "saving_discount": true
+  },
+  "best_sellers": [
+    {
+      "product_title": "Hiphugger",
+      "product_droplets": "heavy days",
+      "image": "/static/media/best_seller_1.901ae99f.jpg"
+    },
+    {
+      "product_title": "Cheeky",
+      "product_droplets": "light days",
+      "image": "/static/media/best_seller_2.f91c6342.jpg"
+    },
+    {
+      "product_title": "Thong",
+      "product_droplets": "lightest days",
+      "image": "/static/media/best_seller_3.c01cf860.jpg"
+    },
+    {
+      "product_title": "Sport",
+      "product_droplets": "medium days",
+      "image": "/static/media/best_seller_4.299d151f.jpg"
+    },
+    {
+      "product_title": "Boyshort",
+      "product_droplets": "light days",
+      "image": "/static/media/best_seller_5.b808aa65.jpg"
+    }
+  ]
+}
