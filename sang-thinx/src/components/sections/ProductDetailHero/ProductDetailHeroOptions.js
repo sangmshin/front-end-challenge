@@ -4,9 +4,9 @@ import styles from './ProductDetailHeroOptions.module.scss';
 import {
   Button,
   ColorSelector,
-  QuantitySelector,
+  Dropdown,
   Link,
-  Dropdown
+  QuantitySelector,
 } from 'components/elements';
 import { ADD_TO_CART_TEXT, SIZE_CHART_TEXT } from 'core/constants';
 
@@ -22,7 +22,7 @@ const ProductDetailHeroOptions = ({
       <div className={styles['options-container']}>
         <h2 className={styles.price}>${price}</h2>
         <ColorSelector colors={availableColors} />
-        <QuantitySelector />
+        <QuantitySelector max={9} />
         <Dropdown
           className={styles['size-dropdown']}
           items={availableSizes}

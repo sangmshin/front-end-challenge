@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import { number } from 'prop-types';
 import { Button } from 'components/elements';
 import styles from './QuantitySelector.module.scss';
 
-const QuantitySelector = () => {
+const QuantitySelector = ({ max }) => {
   const [quantity, setQuantity] = useState(1);
   const increaseQuantity = () => setQuantity(quantity + 1);
   const decreaseQuantity = () => setQuantity(quantity - 1);
   const disabledDecreaseButton = quantity === 1;
-  const disabledIncreaseButton = quantity === 9;
+  const disabledIncreaseButton = quantity === max;
 
   return (
     <div className={styles.root}>
@@ -42,6 +43,14 @@ const QuantitySelector = () => {
       </Button>
     </div>
   )
+}
+
+QuantitySelector.propTypes = {
+  max: number
+}
+
+QuantitySelector.defaultProps = {
+  max: null
 }
 
 export default QuantitySelector;
