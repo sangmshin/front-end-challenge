@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { func, string } from 'prop-types';
-import debounce from 'debounce';
 import { connect } from 'react-redux';
+import debounce from 'debounce';
 import { getPageData } from 'store/page-data/actions';
 import { setLastBreakPoint } from 'store/ui/actions';
-import { getCurrentBreakPoint } from 'core/utils';
 import { getLastBreakPoint } from 'store/ui/selectors';
+import { getCurrentBreakPoint } from 'core/utils';
+import styles from './Layout.module.scss';
 
 const Layout = ({
   children,
@@ -30,7 +31,11 @@ const Layout = ({
     return () => window.removeEventListener('resize', debouncedHandleResize);
   }, [])
 
-  return children
+  return (
+    <div className={styles.root}>
+      {children}
+    </div>
+  )
 }
 
 Layout.propTypes = {

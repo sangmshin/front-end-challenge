@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { array, string } from 'prop-types';
 import cx from 'classnames';
 import {
   DropdownButton,
@@ -36,6 +37,16 @@ const Dropdown = ({
       }
     </div>
   )
+}
+
+Dropdown.propTypes = {
+  className: string,
+  items: array.isRequired,
+  type: string.isRequired
+}
+
+Dropdown.defaultProps = {
+  className: ''
 }
 
 export default Dropdown;

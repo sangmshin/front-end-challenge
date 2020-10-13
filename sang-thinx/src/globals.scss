@@ -16,7 +16,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   line-height: 1.5rem;
   color: $type-black;
 
@@ -24,7 +24,7 @@ body {
     font-family: 'Graphik-Medium', Arial, Helvetica, sans-serif;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     letter-spacing: 6px;
   }
 
@@ -63,16 +63,37 @@ body {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
   }
-}
 
-section, .slick-slider:focus {
-  outline: none;
+  .page-gutter {
+    padding: 0 60px;
+  }
 
-  & *:focus{
+  .page-max-width {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  section, .slick-slider:focus {
     outline: none;
+  
+    & *:focus{
+      outline: none;
+    }
+  }
+
+  ul.slick-dots li button:before {
+    opacity: 0.5;
   }
 }
 
-ul.slick-dots li button:before {
-  opacity: 0.5;
+@media (min-width: $screen-md) {
+  div.page-max-width {
+    max-width: none;
+  }
+}
+
+@media (min-width: $screen-xlg) {
+  main .page-gutter {
+    padding: 0 90px;
+  }
 }

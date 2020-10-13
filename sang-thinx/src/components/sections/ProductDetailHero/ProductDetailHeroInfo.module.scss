@@ -1,10 +1,10 @@
 @import 'variables';
 
 .root {
-  padding: 65px 65px 30px;
+  padding: 70px 0 30px;
   
   .info-container {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 
     .title {
       font-size: 1rem;
@@ -15,41 +15,36 @@
       font-size: 1rem;
     }
   }
+}
 
-  .options-container {
-    text-transform: lowercase;
-    
-    .price {
-      font-size: 1rem;
-    }
+@media (min-width: $screen-md) {
+  .root {
+    width: 100%;
+    padding: 30px 0;
 
-    .size-dropdown {
-      margin-top: 20px;
+    .info-container {
+      margin-bottom: 0;
     }
+  }
+}
 
-    .size-chart {
-      font-size: 0.6875rem;
-      text-decoration: underline;
-      margin-top: 5px;
-    }
+@media (min-width: $screen-lg) {
+  .root {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0px;
+    width: 25%;
+    height: 100vh;
+    padding: 0;
+  }
+}
 
-    .add-to-cart {
-      display: block;
-      width: 100%;
-      background-color: $primary-black;
-      color: $type-white;
-      font-size: 0.8125rem;
-      padding: 7px;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .savings {
-      margin-top: 25px;
-      font-size: 0.75rem;
-      text-decoration: underline;
-      width: 100%;
-      text-align: center;
-    }
+@media (min-width: $screen-xlg) {
+  .info-container {
+    width: 100%;
+    max-width: 310px;
   }
 }

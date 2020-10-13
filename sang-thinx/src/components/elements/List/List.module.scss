@@ -2,9 +2,14 @@
 
 .root {
   position: absolute;
-  border: 1px solid black;
-  width: 100%;
   top: 24px;
   left: -1px;
+  width: 100%;
   background-color: $primary-lightgrey;
+  border: 1px solid black;
+  
+  &.upward{
+    top: unset;
+    bottom: 24px;
+  }
 }

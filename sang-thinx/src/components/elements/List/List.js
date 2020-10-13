@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { array, func, string } from 'prop-types';
 import { ListItem } from 'components/elements';
 import styles from './List.module.scss';
+import cx from 'classnames';
 
 const List = ({
   items,
   onSelectItem,
   selectedItem,
 }) => {
+  const [shouldListOpenUpward, openUpward] = useState(false);
+
+  const listElement = useRef();
   const listItems = items.map(item => (
     <ListItem
       item={item}
@@ -17,8 +21,25 @@ const List = ({
     />
   ));
 
+  useEffect(() => {
+    const shouldOpenUpward = listElement.current.getBoundingClientRect().top > window.innerHeight - listElement.current.clientHeight;
+    
+    if (shouldOpenUpward) openUpward(true);
+    else openUpward(false);
+  }, []);
+
+  const listClass = cx(styles.root, {
+    [styles.upward]: shouldListOpenUpward
+  });
+  
   return (
-    <ul className={styles.root} role='listbox'>{listItems}</ul>
+    <ul
+      ref={listElement}
+      className={listClass}
+      role='listbox'
+    >
+      {listItems}
+    </ul>
   );
 }
 
