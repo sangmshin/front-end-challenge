@@ -1,14 +1,14 @@
 import React from 'react';
-import { array, shape, string } from 'prop-types';
+import { array, bool, shape, string } from 'prop-types';
 import styles from './ProductDetailHeroInfo.module.scss';
 import {
+  Button,
   ColorSelector,
   QuantitySelector,
   Link,
-  Dropdown,
-  // DropdownButton
+  Dropdown
 } from 'components/elements';
-import { SIZE_CHART_TEXT } from 'core/constants';
+import { ADD_TO_CART_TEXT, SIZE_CHART_TEXT } from 'core/constants';
 
 const ProductDetailHeroInfo = ({
   product_title: title,
@@ -37,7 +37,22 @@ const ProductDetailHeroInfo = ({
           type='size'
         />
         {sizeChart &&
-          <Link className={styles['size-chart']}>{SIZE_CHART_TEXT}</Link>
+          <Link className={styles['size-chart']}>
+            {SIZE_CHART_TEXT}
+          </Link>
+        }
+        <Button
+          accessibilityText='add to cart'
+          ariaLabel='add to cart'
+          className={styles['add-to-cart']}
+          type='submit'
+        >
+          {ADD_TO_CART_TEXT}
+        </Button>
+        {savings &&
+          <Link className={styles.savings}>
+            {savings.label}
+          </Link>
         }
       </div>
     </div>
@@ -51,6 +66,7 @@ ProductDetailHeroInfo.propTypes = {
   price: string.isRequired,
   available_colors: array.isRequired,
   available_sizes: array.isRequired,
+  size_chart: bool.isRequired,
   savings: shape({
     label: string,
     url: string

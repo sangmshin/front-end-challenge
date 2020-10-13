@@ -3,4 +3,5 @@ export const COLOR_HEXCODE_MAP = {
   black: '#000',
 }
 
-export const SIZE_CHART_TEXT = "what's my size?"
+export const SIZE_CHART_TEXT = "what's my size?";
+export const ADD_TO_CART_TEXT = 'add to cart';

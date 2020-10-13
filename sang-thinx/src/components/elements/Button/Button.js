@@ -11,7 +11,8 @@ const Button = forwardRef(({
   disabled,
   onClick,
   role,
-  style
+  style,
+  type
 }, ref) => {
   const clickHandler = e => onClick && onClick(e);
 
@@ -19,14 +20,15 @@ const Button = forwardRef(({
     <button
       ref={ref}
       aria-label={ariaLabel}
-      className={cx('btn', className)}
+      className={cx(styles.root, className)}
       onClick={clickHandler}
       disabled={disabled}
       role={role}
       style={style}
+      type={type}
     >
       {children}
-      {accessibleText && <span className={styles.accessible}>{accessibleText}</span>}
+      {accessibleText && <span className='accessible'>{accessibleText}</span>}
     </button>
   )
 })

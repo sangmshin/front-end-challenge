@@ -1,3 +1,5 @@
+@import 'variables';
+
 .root {
   padding: 65px 65px 30px;
   
@@ -29,6 +31,25 @@
       font-size: 0.6875rem;
       text-decoration: underline;
       margin-top: 5px;
+    }
+
+    .add-to-cart {
+      display: block;
+      width: 100%;
+      background-color: $primary-black;
+      color: $type-white;
+      font-size: 0.8125rem;
+      padding: 7px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .savings {
+      margin-top: 25px;
+      font-size: 0.75rem;
+      text-decoration: underline;
+      width: 100%;
+      text-align: center;
     }
   }
 }
