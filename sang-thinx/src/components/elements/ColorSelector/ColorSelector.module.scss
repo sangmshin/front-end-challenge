@@ -1,26 +1,34 @@
 .root {
-  border: 1px solid black;
   display: flex;
+  height: 30px;
+  border: 1px solid black;
   margin-top: 20px;
   
   & > * {
-    letter-spacing: 1px;
     flex: 1;
-    padding: 3px 15px;
-    font-size: 1rem;
+    padding: 0 15px;
+    font-size: 0.875rem;
+  }
+
+  .color-text {
+    display: flex;
+    align-items: center;
   }
 
   .color-button {
     display: flex;
     align-items: center;
-  }
-  
-  .check-mark {
-    margin-left: 5px;
-    display: flex;
-
-    svg {
-      width: 15px;
+    
+    .color-name {
+      padding-top: 3px;
+    }
+    
+    .check-mark {
+      margin: 5px 0 0 5px;
+      
+      svg {
+        width: 15px;
+      }
     }
   }
 }

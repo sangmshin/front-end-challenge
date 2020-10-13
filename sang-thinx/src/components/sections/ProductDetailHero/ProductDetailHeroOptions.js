@@ -34,8 +34,8 @@ const ProductDetailHeroOptions = ({
           </Link>
         }
         <Button
-          accessibilityText='add to cart'
-          ariaLabel='add to cart'
+          accessibleText={ADD_TO_CART_TEXT}
+          ariaLabel={ADD_TO_CART_TEXT}
           className={styles['add-to-cart']}
           type='submit'
         >

@@ -51,7 +51,7 @@ const ColorSelector = ({ colors }) => {
           color: textColor
         }}
       >
-        {color}
+        <span className={styles['color-name']}>{color}</span>
         {isSelected && checkMark}
       </Button>
     )
@@ -59,7 +59,7 @@ const ColorSelector = ({ colors }) => {
 
   return (
     <div className={styles.root}>
-      <span>color</span>
+      <span className={styles['color-text']}>color</span>
       {colorOptions}
     </div>
   )

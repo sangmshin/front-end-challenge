@@ -1,6 +1,7 @@
 .root {
-  border: 1px solid black;
   display: flex;
+  height: 30px;
+  border: 1px solid black;
   margin-top: 20px;
 
   .decrease-button {
@@ -16,24 +17,25 @@
     font-size: 1.25rem;
   }
   
-  .quantity-text {
-    letter-spacing: 1px;
+  .quantity-text-wrapper {
     flex: 1;
-    padding: 3px 15px;
-    font-size: 1rem;
-    text-align:center
-  }
+    padding: 3px 10px;
+    font-size: 0.875rem;
+    text-align: center;
 
-  .number {
-    position: relative;
-    left: 5px;
-    width: 28px;
-    background-color: transparent;
-    text-align: right;
-    padding: 0;
-    font-size: 1rem;
-    pointer-events: none;
-    vertical-align: middle; 
-    border: none;
+    .quantity-text {
+      padding-left: 30px;
+    }
+    
+    .quantity-number {
+      position: relative;
+      width: 40px;
+      padding-top: 3px;
+      background-color: transparent;
+      font-size: 0.875rem;
+      pointer-events: none;
+      vertical-align: middle; 
+      border: none;
+    }
   }
 }

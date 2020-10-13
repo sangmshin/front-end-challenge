@@ -21,16 +21,18 @@ const QuantitySelector = ({ max }) => {
       >
         -
       </Button>
-      <span className={styles['quantity-text']} role='presentation'>
-        quantity ( 
+      <span className={styles['quantity-text-wrapper']} role='presentation'>
+        <span className={styles['quantity-text']}>
+          quantity
+        </span>
         <input
-          className={styles.number}
+          aria-label='quantity'
+          className={styles['quantity-number']}
           name='quantity'
-          readOnly='readonly'
-          value={quantity}
-          type='number'
+          step='1'
+          readOnly
+          value={`(${quantity})`}
         />
-        )
       </span>
       <Button
         ariaLabel='increase selected quantity'
