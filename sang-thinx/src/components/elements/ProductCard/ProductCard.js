@@ -12,23 +12,26 @@ const ProductCard = ({
     src,
     alt
   }
-}) => {
-  return (
-    <div className={cx(styles.root, className)}>
+}) => (
+  <div className={cx(styles.root, className)}>
+    <div className={styles['product-card-container']}>
       <div className={styles['product-card-image']}>
         <Link>
           <img src={src} alt={alt} />
         </Link>
       </div>
-      <Link>
-        <h2>{title}</h2>
-      </Link>
-      <p>{subtitle}</p>
+      <div>
+        <Link>
+          <h2>{title}</h2>
+        </Link>
+        <p>{subtitle}</p>
+      </div>
     </div>
-  )
-}
+  </div>
+);
 
 ProductCard.propTypes = {
+  className: string,
   product_title: string.isRequired,
   product_subtitle: string,
   image: shape({
@@ -39,7 +42,9 @@ ProductCard.propTypes = {
 }
 
 ProductCard.defaultProps = {
-  image: null,
+  className: '',
+  product_subtitle: '',
+  image: {},
   url: null
 }
 

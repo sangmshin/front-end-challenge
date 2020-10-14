@@ -1,7 +1,5 @@
 import React, { forwardRef } from 'react';
 import { bool, func, node, object, oneOfType, string } from 'prop-types';
-import cx from 'classnames';
-import styles from './Button.module.scss';
 
 const Button = forwardRef(({
   accessibleText,
@@ -20,7 +18,7 @@ const Button = forwardRef(({
     <button
       ref={ref}
       aria-label={ariaLabel}
-      className={cx(styles.root, className)}
+      className={className}
       onClick={clickHandler}
       disabled={disabled}
       role={role}

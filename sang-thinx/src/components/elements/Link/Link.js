@@ -1,7 +1,5 @@
 import React from 'react';
 import { func, node, string } from 'prop-types';
-import styles from './Link.module.scss';
-import cx from 'classnames';
 
 const Link = ({
   accessibleText,
@@ -16,7 +14,7 @@ const Link = ({
   return (
     <a
       href={to}
-      className={cx(styles.root, className)}
+      className={className}
       onClick={onClick}
       target={target}
     >

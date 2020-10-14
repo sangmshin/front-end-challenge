@@ -18,7 +18,7 @@ const BestSellers = ({ best_selling_products: bestSellers }) => {
 
   return (
     <section className={cx(styles.root, 'page-gutter')}>
-      <div className='page-max-width'>
+      <div className={cx(styles['products-wrapper'], 'page-max-width')}>
         {productCards}
       </div>
     </section>

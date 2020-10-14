@@ -1,12 +1,18 @@
+@import 'variables';
+
 .root {
-
   .product-card-image {
+    img {
+      width: 100%;
+    }
+  }
+}
 
-    a {
-      // display: block;
-
+@media (min-width: $screen-md) {
+  .root {
+    .product-card-image {
       img {
-        width: 100%;
+        width: unset;
       }
     }
   }

@@ -15,11 +15,6 @@ const Dropdown = ({
   const [selectedItem, selectItem] = useState(null);
   const [isListOpen, toggleList] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('click', handleClick);
-    return () => window.removeEventListener('click', handleClick);
-  })
-
   const handleDropdown = item => {
     selectItem(item);
     toggleList(false);
@@ -28,7 +23,12 @@ const Dropdown = ({
   const handleClick = e => {
     const clickedOutside = isListOpen && (e.target.getAttribute('role') !== 'option radio');
     if (clickedOutside) toggleList(false);
-  }
+  };
+
+  useEffect(() => {
+    window.addEventListener('click', handleClick);
+    return () => window.removeEventListener('click', handleClick);
+  });
 
   return (
     <div className={cx(styles.root, className)}>

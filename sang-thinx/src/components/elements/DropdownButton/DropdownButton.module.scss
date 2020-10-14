@@ -10,7 +10,7 @@
   .caret {
     position: relative;
     cursor: pointer;
-    
+
     &:before {
       content: '';
       position: absolute;
@@ -20,7 +20,7 @@
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
     }
-    
+
     &:after {
       content: '';
       position: absolute;
