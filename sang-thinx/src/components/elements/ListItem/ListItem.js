@@ -19,6 +19,7 @@ const ListItem = ({
   return (
     <li role='option' aria-selected={isSelected}>
       <Button
+        ariaLabel={`size: ${item}`}
         className={buttonClass}
         onClick={handleClick}
         role='option radio'

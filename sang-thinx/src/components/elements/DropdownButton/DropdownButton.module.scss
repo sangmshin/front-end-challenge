@@ -10,10 +10,6 @@
     position: relative;
     cursor: pointer;
     transition: .3s ease-out;
-
-    &.open {
-      transform: rotateX(180deg);
-    }
     
     &:before {
       content: '';

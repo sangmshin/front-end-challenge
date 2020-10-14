@@ -22,9 +22,11 @@ const List = ({
   ));
 
   useEffect(() => {
-    const shouldOpenUpward = listElement.current.getBoundingClientRect().top > window.innerHeight - listElement.current.clientHeight;
-    
-    if (shouldOpenUpward) openUpward(true);
+    const elementPositionOnScreen = listElement.current.getBoundingClientRect().top;
+    const enoughSpaceForDropdown = window.innerHeight - listElement.current.clientHeight;
+    const isEnoughSpaceForDropdown = elementPositionOnScreen < enoughSpaceForDropdown;
+
+    if (!isEnoughSpaceForDropdown) openUpward(true);
     else openUpward(false);
   }, []);
 
@@ -41,7 +43,7 @@ const List = ({
       {listItems}
     </ul>
   );
-}
+};
 
 List.propTypes = {
   items: array.isRequired,

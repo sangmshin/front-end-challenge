@@ -23,9 +23,8 @@ const Dropdown = ({
   return (
     <div className={cx(styles.root, className)}>
       <DropdownButton
-        isOpen={isListOpen}
         selectedItem={selectedItem}
-        onClick={() => toggleList(isListOpen ? false : true)}
+        onClick={() => toggleList(true)}
         type={type}
       />
       {isListOpen &&
