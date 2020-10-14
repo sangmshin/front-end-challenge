@@ -1,0 +1,23 @@
+.root {
+  margin: 35px 0;
+
+  .best-seller-card {
+    margin-bottom: 45px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      font-weight: normal;
+      padding: 5px 0;
+    }
+
+    p {
+      font-size: 0.6875rem;
+    }
+  }
+}

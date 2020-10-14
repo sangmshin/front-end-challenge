@@ -4,14 +4,14 @@ import styles from './ProductDetailHeroInfo.module.scss';
 
 const ProductDetailHeroInfo = ({
   product_title: title,
-  product_droplets: droplets,
+  product_subtitle: subtitle,
   description,
 }) => {
   return (
     <div className={styles.root}>
       <div className={styles['info-container']}>
         <h1 className={styles.title}>{title}</h1>
-        <p className={styles.droplets}>{droplets}</p>
+        <p className={styles.subtitle}>{subtitle}</p>
         <p className={styles.description}>{description}</p>
       </div>
     </div>
@@ -20,7 +20,7 @@ const ProductDetailHeroInfo = ({
 
 ProductDetailHeroInfo.propTypes = {
   product_title: string.isRequired,
-  product_droplets: string.isRequired,
+  product_subtitle: string.isRequired,
   description: string.isRequired,
 }
 

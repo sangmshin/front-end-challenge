@@ -23,7 +23,7 @@
       }
     ],
     "product_title": "Hi - Waist",
-    "product_droplets": "Heavy days. Holds up to 2 tampon's worth",
+    "product_subtitle": "Heavy days. Holds up to 2 tampon's worth",
     "description": "The phrase \"treat yo'self\" reaches new belly-button brushing heights with the Hi-Waist, and it's here just in time for cuffing season.",
     "price": "35.00",
     "available_colors": [
@@ -48,7 +48,7 @@
     "best_selling_products": [
       {
         "product_title": "Shop Hiphugger",
-        "product_droplets": "heavy days",
+        "product_subtitle": "heavy days",
         "image": {
           "src": "https://thinx-assets.s3.amazonaws.com/best_seller_1.jpg",
           "alt": "Hiphugger"
@@ -57,7 +57,7 @@
       },
       {
         "product_title": "Shop Cheeky",
-        "product_droplets": "light days",
+        "product_subtitle": "light days",
         "image": {
           "src": "https://thinx-assets.s3.amazonaws.com/best_seller_2.jpg",
           "alt": "Cheeky"
@@ -66,7 +66,7 @@
       },
       {
         "product_title": "Shop Thong",
-        "product_droplets": "lightest days",
+        "product_subtitle": "lightest days",
         "image": {
           "src": "https://thinx-assets.s3.amazonaws.com/best_seller_3.jpg",
           "alt": "Thong"
@@ -75,7 +75,7 @@
       },
       {
         "product_title": "Shop Sport",
-        "product_droplets": "medium days",
+        "product_subtitle": "medium days",
         "image": {
           "src": "https://thinx-assets.s3.amazonaws.com/best_seller_4.jpg",
           "alt": "Sport"
@@ -84,7 +84,7 @@
       },
       {
         "product_title": "Shop Boyshort",
-        "product_droplets": "light days",
+        "product_subtitle": "light days",
         "image": {
           "src": "https://thinx-assets.s3.amazonaws.com/best_seller_5.jpg",
           "alt": "Boyshort"

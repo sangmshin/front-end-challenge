@@ -1,18 +1,26 @@
 import React from 'react';
 import { array } from 'prop-types';
+import cx from 'classnames';
 import { ProductCard } from 'components/elements';
 import { isArrayWithLength } from 'core/utils';
+import styles from './BestSellers.module.scss';
 
 const BestSellers = ({ best_selling_products: bestSellers }) => {
   if (!isArrayWithLength(bestSellers)) return null;
 
   const productCards = bestSellers.map(product => (
-    <ProductCard {...product} key={product.product_title} />
+    <ProductCard
+      {...product}
+      className={styles['best-seller-card']}
+      key={product.product_title}
+    />
   ));
 
   return (
-    <section>
-      {productCards}
+    <section className={cx(styles.root, 'page-gutter')}>
+      <div className='page-max-width'>
+        {productCards}
+      </div>
     </section>
   )
 };

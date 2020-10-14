@@ -8,10 +8,7 @@ import { getPageData } from 'store/page-data/selectors';
 const ProductDetailTemplate = ({ pageData }) => {
   const heroData = idx(pageData, _ => _.hero)
   const bestSellersData = idx(pageData, _ => _.best_sellers)
-  if (!pageData || !heroData) {
-    console.log('"ProductDetailTemplate" received 0 page data.');
-    return null;
-  };
+  if (!pageData || !heroData) return null;
 
   return (
     <main>

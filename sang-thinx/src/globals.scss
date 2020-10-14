@@ -22,22 +22,23 @@ body {
   * {
     font-family: 'Graphik-Medium', Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    // font-size: 1rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: 6px;
+    margin: 0;
   }
 
   p {
     letter-spacing: 1.25px;
+    margin: 0;
   }
 
   a {
     text-decoration: none;
     cursor: pointer;
     color: unset;
-    display: inline-block;
+    // display: inline-block;
   }
 
   button {
