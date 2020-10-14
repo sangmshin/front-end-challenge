@@ -3,7 +3,7 @@ import { func, string } from 'prop-types';
 import { Button } from 'components/elements';
 import styles from './DropdownButton.module.scss';
 
-const DropdownButton = ({
+export const DropdownButton = ({
   onClick,
   selectedItem,
   type,
