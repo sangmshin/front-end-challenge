@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { array, string } from 'prop-types';
 import cx from 'classnames';
 import {
@@ -15,10 +15,20 @@ const Dropdown = ({
   const [selectedItem, selectItem] = useState(null);
   const [isListOpen, toggleList] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener('click', handleClick);
+    return () => window.removeEventListener('click', handleClick);
+  })
+
   const handleDropdown = item => {
     selectItem(item);
     toggleList(false);
   };
+  
+  const handleClick = e => {
+    const clickedOutside = isListOpen && (e.target.getAttribute('role') !== 'option radio');
+    if (clickedOutside) toggleList(false);
+  }
 
   return (
     <div className={cx(styles.root, className)}>
