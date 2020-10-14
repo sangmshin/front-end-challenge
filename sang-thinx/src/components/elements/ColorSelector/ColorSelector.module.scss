@@ -1,9 +1,11 @@
+@import 'variables';
+
 .root {
   display: flex;
   height: 30px;
   border: 1px solid black;
   margin-top: 20px;
-  
+
   & > * {
     flex: 1;
     padding: 0 15px;
@@ -18,16 +20,36 @@
   .color-button {
     display: flex;
     align-items: center;
-    
+
     .color-name {
       padding-top: 3px;
     }
-    
+
     .check-mark {
       margin: 5px 0 0 5px;
-      
+
       svg {
         width: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .root {
+
+    & > * {
+      font-size: 1rem;
+    }
+
+    .color-button {
+
+      .color-name {
+        padding-top: 0;
+      }
+
+      .check-mark {
+        margin-top: 2px;
       }
     }
   }

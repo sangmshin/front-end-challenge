@@ -2,14 +2,14 @@
 
 .root {
   position: absolute;
-  top: 24px;
+  top: -1px;
   left: -1px;
   width: 100%;
   background-color: $primary-lightgrey;
   border: 1px solid black;
-  
+
   &.upward{
     top: unset;
-    bottom: 24px;
+    bottom: -1px;
   }
 }

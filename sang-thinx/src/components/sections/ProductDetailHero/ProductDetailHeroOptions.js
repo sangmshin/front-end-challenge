@@ -16,40 +16,38 @@ const ProductDetailHeroOptions = ({
   available_sizes: availableSizes,
   size_chart: sizeChart, 
   savings,
-}) => {
-  return (
-    <div className={styles.root}>
-      <div className={styles['options-container']}>
-        <h2 className={styles.price}>${price}</h2>
-        <ColorSelector colors={availableColors} />
-        <QuantitySelector max={9} />
-        <Dropdown
-          className={styles['size-dropdown']}
-          items={availableSizes}
-          type='size'
-        />
-        {sizeChart &&
-          <Link className={styles['size-chart']}>
-            {SIZE_CHART_TEXT}
-          </Link>
-        }
-        <Button
-          accessibleText={ADD_TO_CART_TEXT}
-          ariaLabel={ADD_TO_CART_TEXT}
-          className={styles['add-to-cart']}
-          type='submit'
-        >
-          {ADD_TO_CART_TEXT}
-        </Button>
-        {savings &&
-          <Link className={styles.savings}>
-            {savings.label}
-          </Link>
-        }
-      </div>
+}) => (
+  <div className={styles.root}>
+    <div>
+      <h2 className={styles.price}>${price}</h2>
+      <ColorSelector colors={availableColors} />
+      <QuantitySelector max={9} />
+      <Dropdown
+        className={styles['size-dropdown']}
+        items={availableSizes}
+        type='size'
+      />
+      {sizeChart &&
+        <Link className={styles['size-chart']}>
+          {SIZE_CHART_TEXT}
+        </Link>
+      }
+      <Button
+        accessibleText={ADD_TO_CART_TEXT}
+        ariaLabel={ADD_TO_CART_TEXT}
+        className={styles['add-to-cart']}
+        type='submit'
+      >
+        {ADD_TO_CART_TEXT}
+      </Button>
+      {savings &&
+        <Link className={styles.savings}>
+          {savings.label}
+        </Link>
+      }
     </div>
-  )
-};
+  </div>
+);
 
 ProductDetailHeroOptions.propTypes = {
   price: string.isRequired,

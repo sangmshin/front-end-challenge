@@ -2,7 +2,8 @@
 
 .item {
   width: 100%;
-  padding: 13px 17px;
+  height: 34px;
+  padding: 0px 14px;
   text-align: left;
 
   &:hover {
@@ -12,4 +13,10 @@
 
 .selected {
   background-color: $primary-beige;
+}
+
+@media (min-width: $screen-md) {
+  .item {
+    font-size: 1rem;
+  }
 }

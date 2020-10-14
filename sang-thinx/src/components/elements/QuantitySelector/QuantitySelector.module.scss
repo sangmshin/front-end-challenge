@@ -1,3 +1,5 @@
+@import 'variables';
+
 .root {
   display: flex;
   height: 30px;
@@ -7,7 +9,7 @@
   .decrease-button {
     border-right: 1px solid black;
   }
-  
+
   .increase-button {
     border-left: 1px solid black;
   }
@@ -16,26 +18,29 @@
     width: 40px;
     font-size: 1.25rem;
   }
-  
+
   .quantity-text-wrapper {
     flex: 1;
     padding: 3px 10px;
-    font-size: 0.875rem;
     text-align: center;
 
     .quantity-text {
+      font-size: 0.875rem;
       padding-left: 30px;
     }
-    
+
     .quantity-number {
-      position: relative;
       width: 40px;
-      padding-top: 3px;
       background-color: transparent;
       font-size: 0.875rem;
-      pointer-events: none;
-      vertical-align: middle; 
       border: none;
     }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .root .quantity-text-wrapper .quantity-text,
+  .root .quantity-text-wrapper .quantity-number {
+      font-size: 1rem;
   }
 }

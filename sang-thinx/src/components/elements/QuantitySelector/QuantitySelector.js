@@ -18,6 +18,7 @@ const QuantitySelector = ({ max }) => {
         disabled={disabledDecreaseButton}
         onClick={decreaseQuantity}
         role='presentation'
+        type='button'
       >
         -
       </Button>
@@ -28,9 +29,10 @@ const QuantitySelector = ({ max }) => {
         <input
           aria-label='quantity'
           className={styles['quantity-number']}
+          maxLength={max}
           name='quantity'
-          step='1'
           readOnly
+          step='1'
           value={`(${quantity})`}
         />
       </span>
@@ -40,6 +42,7 @@ const QuantitySelector = ({ max }) => {
         disabled={disabledIncreaseButton}
         onClick={increaseQuantity}
         role='presentation'
+        type='button'
       >
         +
       </Button>

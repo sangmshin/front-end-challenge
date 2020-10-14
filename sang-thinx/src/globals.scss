@@ -48,6 +48,7 @@ body {
 
   ul {
     padding: 0;
+    margin: 0;
   }
 
   li {
@@ -90,7 +91,7 @@ body {
   }
 }
 
-@media (min-width: $screen-xlg) {
+@media (min-width: $screen-lg) {
   main .page-gutter {
     padding: 0 90px;
   }
