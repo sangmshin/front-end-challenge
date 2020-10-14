@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: BestSellers #render should match snapshot 1`] = `
+<section
+  className="root page-gutter"
+>
+  <div
+    className="products-wrapper page-max-width"
+  >
+    <ProductCard
+      className="best-seller-card"
+      image={
+        Object {
+          "alt": "Hiphugger",
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_1.jpg",
+        }
+      }
+      key="Shop Hiphugger"
+      product_subtitle="heavy days"
+      product_title="Shop Hiphugger"
+      url=""
+    />
+    <ProductCard
+      className="best-seller-card"
+      image={
+        Object {
+          "alt": "Cheeky",
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_2.jpg",
+        }
+      }
+      key="Shop Cheeky"
+      product_subtitle="light days"
+      product_title="Shop Cheeky"
+      url=""
+    />
+    <ProductCard
+      className="best-seller-card"
+      image={
+        Object {
+          "alt": "Thong",
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_3.jpg",
+        }
+      }
+      key="Shop Thong"
+      product_subtitle="lightest days"
+      product_title="Shop Thong"
+      url=""
+    />
+    <ProductCard
+      className="best-seller-card"
+      image={
+        Object {
+          "alt": "Sport",
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_4.jpg",
+        }
+      }
+      key="Shop Sport"
+      product_subtitle="medium days"
+      product_title="Shop Sport"
+      url=""
+    />
+    <ProductCard
+      className="best-seller-card"
+      image={
+        Object {
+          "alt": "Boyshort",
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_5.jpg",
+        }
+      }
+      key="Shop Boyshort"
+      product_subtitle="light days"
+      product_title="Shop Boyshort"
+      url=""
+    />
+  </div>
+</section>
+`;

@@ -10,7 +10,7 @@ exports[`Component :: DropdownButton #render should match snapshot 1`] = `
   role="button"
   style={null}
 >
-  xsmall
+  Country
   <span
     className="caret"
   />

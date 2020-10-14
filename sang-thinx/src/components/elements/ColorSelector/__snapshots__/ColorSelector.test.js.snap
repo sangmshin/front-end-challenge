@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: ColorSelector #render should match snapshot 1`] = `
+<div
+  className="root"
+>
+  <span
+    className="color-text"
+  >
+    color
+  </span>
+  <ForwardRef
+    accessibleText=""
+    ariaLabel="beige color"
+    className="color-button"
+    disabled={false}
+    key="beige"
+    onClick={[Function]}
+    role="radio"
+    style={
+      Object {
+        "backgroundColor": "#f2d9a5",
+        "color": "black",
+      }
+    }
+  >
+    <span
+      className="color-name"
+    >
+      beige
+    </span>
+  </ForwardRef>
+  <ForwardRef
+    accessibleText=""
+    ariaLabel="black color"
+    className="color-button"
+    disabled={false}
+    key="black"
+    onClick={[Function]}
+    role="radio"
+    style={
+      Object {
+        "backgroundColor": "#000",
+        "color": "white",
+      }
+    }
+  >
+    <span
+      className="color-name"
+    >
+      black
+    </span>
+  </ForwardRef>
+</div>
+`;

@@ -7,7 +7,7 @@ import {
 } from 'components/elements';
 import styles from './Dropdown.module.scss';
 
-const Dropdown = ({
+export const Dropdown = ({
   className,
   items,
   type

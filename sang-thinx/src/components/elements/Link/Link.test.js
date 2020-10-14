@@ -1,19 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { ProductCard } from './ProductCard';
+import { Link } from './Link';
 
-const props = {
-  product_title: 'title',
-  product_subtitle: 'subtitle',
-}
-
-describe('Component :: ProductCard', () => {
-  
+describe('Component :: Link', () => {
   describe('#render', () => {
     const component = shallow(
-      <ProductCard {...props} />
-    );
+      <Link>
+        <p>shethinx.com</p>
+      </Link>
+    )
     it('should match snapshot', () => {
       expect(toJson(component)).toMatchSnapshot();
     });

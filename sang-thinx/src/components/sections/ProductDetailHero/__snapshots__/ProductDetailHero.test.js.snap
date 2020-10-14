@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
+<section
+  className="root page-gutter"
+>
+  <div
+    className="product-detail-wrapper page-max-width"
+  >
+    <ProductDetailHeroInfo
+      available_colors={
+        Array [
+          "black",
+          "beige",
+        ]
+      }
+      available_sizes={
+        Array [
+          "xsmall",
+          "small",
+          "medium",
+          "large",
+          "xlarge",
+          "xxlarge",
+        ]
+      }
+      description="The phrase \\"treat yo'self\\" reaches new belly-button brushing heights with the Hi-Waist, and it's here just in time for cuffing season."
+      price="35.00"
+      product_subtitle="Heavy days. Holds up to 2 tampon's worth"
+      product_title="Hi - Waist"
+      savings={
+        Object {
+          "label": "build a cycle set and save up to 20%",
+          "url": "",
+        }
+      }
+      size_chart={true}
+    />
+    <div
+      className="product-images-container"
+    >
+      <div
+        className="image-wrapper"
+        key="0"
+      >
+        <img
+          alt="Hi-Waist front 1"
+          src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_01_1024x1024.jpg"
+        />
+      </div>
+      <div
+        className="image-wrapper"
+        key="1"
+      >
+        <img
+          alt="Hi-Waist front 2"
+          src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_02_1024x1024.jpg"
+        />
+      </div>
+      <div
+        className="image-wrapper"
+        key="2"
+      >
+        <img
+          alt="Hi-Waist front 3"
+          src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_03_1024x1024.jpg"
+        />
+      </div>
+      <div
+        className="image-wrapper"
+        key="3"
+      >
+        <img
+          alt="Hi-Waist front 4"
+          src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_04_1024x1024.jpg"
+        />
+      </div>
+      <div
+        className="image-wrapper"
+        key="4"
+      >
+        <img
+          alt="Hi-Waist side"
+          src="https://thinx-assets.s3.amazonaws.com/highwaist_black_side_1024x1024.jpg"
+        />
+      </div>
+      <div
+        className="image-wrapper"
+        key="5"
+      >
+        <img
+          alt="Hi-Waist back"
+          src="https://thinx-assets.s3.amazonaws.com/highwaist_black_back_1024x1024.jpg"
+        />
+      </div>
+    </div>
+    <ProductDetailHeroOptions
+      available_colors={
+        Array [
+          "black",
+          "beige",
+        ]
+      }
+      available_sizes={
+        Array [
+          "xsmall",
+          "small",
+          "medium",
+          "large",
+          "xlarge",
+          "xxlarge",
+        ]
+      }
+      description="The phrase \\"treat yo'self\\" reaches new belly-button brushing heights with the Hi-Waist, and it's here just in time for cuffing season."
+      price="35.00"
+      product_subtitle="Heavy days. Holds up to 2 tampon's worth"
+      product_title="Hi - Waist"
+      savings={
+        Object {
+          "label": "build a cycle set and save up to 20%",
+          "url": "",
+        }
+      }
+      size_chart={true}
+    />
+  </div>
+</section>
+`;

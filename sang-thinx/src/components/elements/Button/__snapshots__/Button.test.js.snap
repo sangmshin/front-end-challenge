@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: Button #render should match snapshot 1`] = `
+<button
+  aria-label="Add to cart"
+  className=""
+  disabled={false}
+  onClick={[Function]}
+  role="button"
+  style={null}
+  type="submit"
+>
+  <div
+    className="child"
+  />
+</button>
+`;

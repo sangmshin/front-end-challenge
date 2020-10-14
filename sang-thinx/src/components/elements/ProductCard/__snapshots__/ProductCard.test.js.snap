@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: ProductCard #render should match snapshot 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="product-card-container"
+  >
+    <div>
+      <Link
+        accessibleText=""
+        className=""
+        onClick={[Function]}
+        target={null}
+        to={null}
+      >
+        <h2>
+          title
+        </h2>
+      </Link>
+      <p>
+        subtitle
+      </p>
+    </div>
+  </div>
+</div>
+`;

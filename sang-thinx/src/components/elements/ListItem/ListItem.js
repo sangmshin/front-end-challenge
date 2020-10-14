@@ -4,7 +4,7 @@ import cx from 'classnames';
 import { Button } from 'components/elements';
 import styles from './ListItem.module.scss';
 
-const ListItem = ({
+export const ListItem = ({
   item,
   onSelect,
   selectedItem,

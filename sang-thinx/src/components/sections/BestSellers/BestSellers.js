@@ -5,7 +5,7 @@ import { ProductCard } from 'components/elements';
 import { isArrayWithLength } from 'core/utils';
 import styles from './BestSellers.module.scss';
 
-const BestSellers = ({ best_selling_products: bestSellers }) => {
+export const BestSellers = ({ best_selling_products: bestSellers }) => {
   if (!isArrayWithLength(bestSellers)) return null;
 
   const productCards = bestSellers.map(product => (

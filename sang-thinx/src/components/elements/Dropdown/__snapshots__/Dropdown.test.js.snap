@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: Dropdown #render should match snapshot 1`] = `
+<div
+  className="root"
+>
+  <DropdownButton
+    onClick={[Function]}
+    selectedItem={null}
+    type="City"
+  />
+</div>
+`;

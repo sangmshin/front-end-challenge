@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: QuantitySelector #render should match snapshot 1`] = `
+<div
+  className="root"
+>
+  <ForwardRef
+    accessibleText=""
+    ariaLabel="decrease selected quantity"
+    className="decrease-button"
+    disabled={true}
+    onClick={[Function]}
+    role="presentation"
+    style={null}
+    type="button"
+  >
+    -
+  </ForwardRef>
+  <span
+    className="quantity-text-wrapper"
+    role="presentation"
+  >
+    <span
+      className="quantity-text"
+    >
+      quantity
+    </span>
+    <input
+      aria-label="quantity"
+      className="quantity-number"
+      maxLength={null}
+      name="quantity"
+      readOnly={true}
+      step="1"
+      value="(1)"
+    />
+  </span>
+  <ForwardRef
+    accessibleText=""
+    ariaLabel="increase selected quantity"
+    className="increase-button"
+    disabled={false}
+    onClick={[Function]}
+    role="presentation"
+    style={null}
+    type="button"
+  >
+    +
+  </ForwardRef>
+</div>
+`;

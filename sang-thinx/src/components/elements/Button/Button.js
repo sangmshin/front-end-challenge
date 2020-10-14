@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { bool, func, node, object, oneOfType, string } from 'prop-types';
 
-const Button = forwardRef(({
+export const Button = forwardRef(({
   accessibleText,
   ariaLabel,
   children,

@@ -3,7 +3,7 @@ import { number } from 'prop-types';
 import { Button } from 'components/elements';
 import styles from './QuantitySelector.module.scss';
 
-const QuantitySelector = ({ max }) => {
+export const QuantitySelector = ({ max }) => {
   const [quantity, setQuantity] = useState(1);
   const increaseQuantity = () => setQuantity(quantity + 1);
   const decreaseQuantity = () => setQuantity(quantity - 1);

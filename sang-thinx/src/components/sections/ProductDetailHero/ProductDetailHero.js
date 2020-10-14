@@ -16,7 +16,7 @@ const SLIDER_CONFIG = {
   slidesToScroll: 1
 };
 
-const ProductDetailHero = ({
+export const ProductDetailHero = ({
   images,
   lastBreakPoint,
   ...otherProps

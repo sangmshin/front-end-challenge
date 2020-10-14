@@ -4,7 +4,7 @@ import { ListItem } from 'components/elements';
 import styles from './List.module.scss';
 import cx from 'classnames';
 
-const List = ({
+export const List = ({
   items,
   onSelectItem,
   selectedItem,

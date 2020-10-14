@@ -1,7 +1,7 @@
 import React from 'react';
 import { func, node, string } from 'prop-types';
 
-const Link = ({
+export const Link = ({
   accessibleText,
   children,
   className,

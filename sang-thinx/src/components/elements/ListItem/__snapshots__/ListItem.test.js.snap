@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: ListItem #render should match snapshot 1`] = `
+<li
+  aria-selected={false}
+  role="option"
+>
+  <ForwardRef
+    accessibleText=""
+    ariaLabel="size: Banana"
+    className="item"
+    disabled={false}
+    onClick={[Function]}
+    role="option radio"
+    style={null}
+  >
+    Banana
+  </ForwardRef>
+</li>
+`;

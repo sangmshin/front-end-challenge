@@ -4,7 +4,7 @@ import { Button } from 'components/elements';
 import { COLOR_HEXCODE_MAP } from 'core/constants';
 import styles from './ColorSelector.module.scss';
 
-const ColorSelector = ({ colors }) => {
+export const ColorSelector = ({ colors }) => {
   const [selectedColor, selectColor] = useState('');
   const [elementRefs, setElementRefs] = useState([]);
 

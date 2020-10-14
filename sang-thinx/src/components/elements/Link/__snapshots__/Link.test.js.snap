@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: Link #render should match snapshot 1`] = `
+<a
+  className=""
+  href={null}
+  onClick={[Function]}
+  target={null}
+>
+  <p>
+    shethinx.com
+  </p>
+</a>
+`;

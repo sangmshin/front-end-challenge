@@ -4,22 +4,21 @@ import { Link } from 'components/elements';
 import cx from 'classnames';
 import styles from './ProductCard.module.scss';
 
-const ProductCard = ({
+export const ProductCard = ({
   className,
   product_title: title,
   product_subtitle: subtitle,
-  image: {
-    src,
-    alt
-  }
+  image: { src, alt }
 }) => (
   <div className={cx(styles.root, className)}>
     <div className={styles['product-card-container']}>
-      <div className={styles['product-card-image']}>
-        <Link>
-          <img src={src} alt={alt} />
-        </Link>
-      </div>
+      {src && 
+        <div className={styles['product-card-image']}>
+          <Link>
+            <img src={src} alt={alt} />
+          </Link>
+        </div>
+      }
       <div>
         <Link>
           <h2>{title}</h2>
@@ -38,7 +37,7 @@ ProductCard.propTypes = {
     src: string,
     alt: string
   }),
-  url: string.isRequired
+  url: string
 }
 
 ProductCard.defaultProps = {

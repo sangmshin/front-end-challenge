@@ -7,7 +7,7 @@ import { setLastBreakPoint } from 'store/ui/actions';
 import { getLastBreakPoint } from 'store/ui/selectors';
 import { getCurrentBreakPoint } from 'core/utils';
 
-const Layout = ({
+export const Layout = ({
   children,
   getPageData,
   lastBreakPoint,

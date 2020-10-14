@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: List #render should match snapshot 1`] = `
+<ul
+  className="root"
+  role="listbox"
+>
+  <ListItem
+    item="New York"
+    key="New York"
+    onSelect={[Function]}
+    selectedItem="New York"
+  />
+  <ListItem
+    item="Canada"
+    key="Canada"
+    onSelect={[Function]}
+    selectedItem="New York"
+  />
+</ul>
+`;
