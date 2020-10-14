@@ -5,4 +5,5 @@ export { default as DropdownButton } from './DropdownButton';
 export { default as Link } from './Link';
 export { default as List } from './List';
 export { default as ListItem } from './ListItem';
+export { default as ProductCard } from './ProductCard';
 export { default as QuantitySelector } from './QuantitySelector';

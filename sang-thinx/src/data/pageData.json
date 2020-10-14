@@ -44,31 +44,53 @@
       "url": ""
     }
   },
-  "best_sellers": [
-    {
-      "product_title": "Hiphugger",
-      "product_droplets": "heavy days",
-      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_1.jpg"
-    },
-    {
-      "product_title": "Cheeky",
-      "product_droplets": "light days",
-      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_2.jpg"
-    },
-    {
-      "product_title": "Thong",
-      "product_droplets": "lightest days",
-      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_3.jpg"
-    },
-    {
-      "product_title": "Sport",
-      "product_droplets": "medium days",
-      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_4.jpg"
-    },
-    {
-      "product_title": "Boyshort",
-      "product_droplets": "light days",
-      "image": "https://thinx-assets.s3.amazonaws.com/best_seller_5.jpg"
-    }
-  ]
+  "best_sellers": {
+    "best_selling_products": [
+      {
+        "product_title": "Shop Hiphugger",
+        "product_droplets": "heavy days",
+        "image": {
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_1.jpg",
+          "alt": "Hiphugger"
+        },
+        "url": ""
+      },
+      {
+        "product_title": "Shop Cheeky",
+        "product_droplets": "light days",
+        "image": {
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_2.jpg",
+          "alt": "Cheeky"
+        },
+        "url": ""
+      },
+      {
+        "product_title": "Shop Thong",
+        "product_droplets": "lightest days",
+        "image": {
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_3.jpg",
+          "alt": "Thong"
+        },
+        "url": ""
+      },
+      {
+        "product_title": "Shop Sport",
+        "product_droplets": "medium days",
+        "image": {
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_4.jpg",
+          "alt": "Sport"
+        },
+        "url": ""
+      },
+      {
+        "product_title": "Shop Boyshort",
+        "product_droplets": "light days",
+        "image": {
+          "src": "https://thinx-assets.s3.amazonaws.com/best_seller_5.jpg",
+          "alt": "Boyshort"
+        },
+        "url": ""
+      }
+    ]
+  }
 }

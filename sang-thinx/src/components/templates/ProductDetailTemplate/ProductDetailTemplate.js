@@ -2,16 +2,21 @@ import React from 'react';
 import { object } from 'prop-types';
 import idx from 'idx';
 import { connect } from 'react-redux';
-import { ProductDetailHero } from 'components/sections';
+import { ProductDetailHero, BestSellers } from 'components/sections';
 import { getPageData } from 'store/page-data/selectors';
 
 const ProductDetailTemplate = ({ pageData }) => {
   const heroData = idx(pageData, _ => _.hero)
-  if (!pageData || !heroData) return null;
+  const bestSellersData = idx(pageData, _ => _.best_sellers)
+  if (!pageData || !heroData) {
+    console.log('"ProductDetailTemplate" received 0 page data.');
+    return null;
+  };
 
   return (
     <main>
       <ProductDetailHero {...heroData} />
+      <BestSellers {...bestSellersData} />
     </main>
   )
 };

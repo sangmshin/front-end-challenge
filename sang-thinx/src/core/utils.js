@@ -1,6 +1,6 @@
-export const SMALL = 768; /* Small screen / tablet */
-export const MEDIUM = 1024; /* Medium screen / desktop */
-export const LARGE = 1200; /* Large screen / wide desktop */
+const SMALL = 768; /* Small screen / tablet */
+const MEDIUM = 1024; /* Medium screen / desktop */
+const LARGE = 1200; /* Large screen / wide desktop */
 let BREAKPOINT;
 
 /**
@@ -20,3 +20,9 @@ export function getCurrentBreakPoint() {
 
   return Object.keys(BREAKPOINT).find(breakpoint => BREAKPOINT[breakpoint].matches);
 }
+
+/**
+ * Determines if the data is array and has at least one or more items
+ * @return {boolean}
+ */
+export const isArrayWithLength = arr => Array.isArray(arr) && arr.length > 0;
