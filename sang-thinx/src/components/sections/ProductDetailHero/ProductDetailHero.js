@@ -3,6 +3,7 @@ import { array, string } from 'prop-types';
 import cx from 'classnames';
 import { connect } from 'react-redux';
 import { getLastBreakPoint } from 'store/ui/selectors';
+import { openZoom } from 'store/ui/actions';
 import Slider from 'react-slick';
 import ProductDetailHeroInfo from './ProductDetailHeroInfo';
 import ProductDetailHeroOptions from './ProductDetailHeroOptions';
@@ -19,15 +20,18 @@ const SLIDER_CONFIG = {
 export const ProductDetailHero = ({
   images,
   lastBreakPoint,
+  openZoom,
   ...otherProps
 }) => {
+  
   const renderImages = () => (
     images && images.map(({ src, alt }, index) => (
       <div className={styles['image-wrapper']} key={index} >
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt} onClick={() => openZoom(images)} />
       </div>
     ))
   );
+
   const isSmallBreakPoint = /xsmall$/i.test(lastBreakPoint) || /small$/i.test(lastBreakPoint);
   const isMediumBreakPoint = /medium$/i.test(lastBreakPoint);
   
@@ -84,6 +88,10 @@ ProductDetailHero.defaultProps = {
 
 const mapStateToProps = state => ({
   lastBreakPoint: getLastBreakPoint(state)
-})
+});
 
-export default connect(mapStateToProps)(ProductDetailHero);
+const mapDispatchToProps = {
+  openZoom
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductDetailHero);

@@ -1,17 +1,21 @@
 import React from 'react';
-import { object } from 'prop-types';
+import { bool, object } from 'prop-types';
 import idx from 'idx';
 import { connect } from 'react-redux';
-import { ProductDetailHero, BestSellers } from 'components/sections';
 import { getPageData } from 'store/page-data/selectors';
+import { getScrollBlocked } from 'store/ui/selectors';
+import { ProductDetailHero, BestSellers } from 'components/sections';
 
-export const ProductDetailTemplate = ({ pageData }) => {
+export const ProductDetailTemplate = ({
+  pageData,
+  scrollBlocked
+}) => {
   const heroData = idx(pageData, _ => _.hero)
   const bestSellersData = idx(pageData, _ => _.best_sellers)
   if (!pageData || !heroData) return null;
 
   return (
-    <main>
+    <main className={scrollBlocked ? 'scroll-blocked' : null}>
       <ProductDetailHero {...heroData} />
       <BestSellers {...bestSellersData} />
     </main>
@@ -19,7 +23,8 @@ export const ProductDetailTemplate = ({ pageData }) => {
 };
 
 ProductDetailTemplate.propTypes = {
-  pageData: object
+  pageData: object,
+  scrollBlocked: bool.isRequired,
 }
 
 ProductDetailTemplate.defaultProps = {
@@ -27,7 +32,8 @@ ProductDetailTemplate.defaultProps = {
 }
 
 const mapStateToProps = state => ({
-  pageData: getPageData(state)
+  pageData: getPageData(state),
+  scrollBlocked: getScrollBlocked(state)
 });
 
 export default connect(mapStateToProps)(ProductDetailTemplate);

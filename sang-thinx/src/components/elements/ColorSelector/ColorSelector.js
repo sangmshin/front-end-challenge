@@ -9,7 +9,7 @@ export const ColorSelector = ({ colors }) => {
   const [elementRefs, setElementRefs] = useState([]);
 
   const handleClick = (e, index) => (
-    selectColor(elementRefs[index].current.innerText)
+    selectColor(elementRefs[index].current.textContent)
   )
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export const ColorSelector = ({ colors }) => {
     const isSelected = selectedColor === color;
     const textColor = color === 'black' ? 'white' : 'black';
     const checkMark = (
-      <span className={styles['check-mark']} aria-label='CheckMark Icon'>
+      <span className={styles['check-mark']} aria-label='Check-Mark Icon'>
         <svg
           style={{fill: textColor}}
           xmlns="http://www.w3.org/2000/svg"
@@ -70,4 +70,3 @@ ColorSelector.propTypes = {
 }
 
 export default ColorSelector;
-

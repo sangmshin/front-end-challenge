@@ -6,6 +6,7 @@ import { getPageData } from 'store/page-data/actions';
 import { setLastBreakPoint } from 'store/ui/actions';
 import { getLastBreakPoint } from 'store/ui/selectors';
 import { getCurrentBreakPoint } from 'core/utils';
+import { Zoom } from 'components/elements';
 
 export const Layout = ({
   children,
@@ -32,6 +33,7 @@ export const Layout = ({
 
   return (
     <div>
+      <Zoom />
       {children}
     </div>
   )

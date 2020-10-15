@@ -43,17 +43,19 @@ Button.propTypes = {
   onClick: func,
   role: string,
   style: object,
+  type: string
 };
 
 Button.defaultProps = {
   accessibleText: '',
   ariaLabel: '',
   children: '',
-  className: '',
+  className: null,
   disabled: false,
   onClick: _ => _,
   role: 'button',
-  style: null
+  style: null,
+  type: 'button'
 };
 
 export default Button;
