@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component :: ProductDetailTemplate #render should match snapshot 1`] = `
-<main>
+<main
+  className="scroll-blocked"
+>
   <Connect(ProductDetailHero)
     available_colors={
       Array [

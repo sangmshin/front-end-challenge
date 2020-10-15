@@ -13,6 +13,7 @@ exports[`Component :: ListItem #render should match snapshot 1`] = `
     onClick={[Function]}
     role="option radio"
     style={null}
+    type="button"
   >
     Banana
   </ForwardRef>

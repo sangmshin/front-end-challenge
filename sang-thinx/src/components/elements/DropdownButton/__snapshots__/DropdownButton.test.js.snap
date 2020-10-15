@@ -9,6 +9,7 @@ exports[`Component :: DropdownButton #render should match snapshot 1`] = `
   onClick={[Function]}
   role="button"
   style={null}
+  type="button"
 >
   Country
   <span

@@ -5,7 +5,7 @@ import { ProductDetailTemplate } from './ProductDetailTemplate';
 import pageData from 'data/pageData.json';
 
 const wrapper = shallow(
-  <ProductDetailTemplate pageData={pageData} />
+  <ProductDetailTemplate pageData={pageData} scrollBlocked />
 );
 
 describe('Component :: ProductDetailTemplate', () => {

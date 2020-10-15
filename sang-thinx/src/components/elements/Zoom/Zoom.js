@@ -40,7 +40,7 @@ const Zoom = ({ blockScroll, closeZoom, images, isZoomOpen }) => {
     toggleKeyListener(false);
     blockScroll(false);
     setOpen(false);
-  }
+  };
 
   const zoomedImages = images.map(({ src, alt }, index) => (
     <div key={index}>

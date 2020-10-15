@@ -23,6 +23,7 @@ exports[`Component :: ColorSelector #render should match snapshot 1`] = `
         "color": "black",
       }
     }
+    type="button"
   >
     <span
       className="color-name"
@@ -44,6 +45,7 @@ exports[`Component :: ColorSelector #render should match snapshot 1`] = `
         "color": "white",
       }
     }
+    type="button"
   >
     <span
       className="color-name"
