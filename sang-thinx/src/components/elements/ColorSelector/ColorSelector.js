@@ -8,7 +8,7 @@ export const ColorSelector = ({ colors }) => {
   const [selectedColor, selectColor] = useState('');
   const [elementRefs, setElementRefs] = useState([]);
 
-  const handleClick = (e, index) => (
+  const handleClick = (_, index) => (
     selectColor(elementRefs[index].current.textContent)
   )
 

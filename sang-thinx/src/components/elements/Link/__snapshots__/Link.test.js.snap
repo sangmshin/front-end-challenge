@@ -2,7 +2,7 @@
 
 exports[`Component :: Link #render should match snapshot 1`] = `
 <a
-  className=""
+  className={null}
   href={null}
   onClick={[Function]}
   target={null}

@@ -10,7 +10,7 @@ exports[`Component :: ProductCard #render should match snapshot 1`] = `
     <div>
       <Link
         accessibleText=""
-        className=""
+        className={null}
         onClick={[Function]}
         target={null}
         to={null}

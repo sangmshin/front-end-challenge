@@ -9,8 +9,8 @@ export const ListItem = ({
   onSelect,
   selectedItem,
 }) => {
-  const isSelected = selectedItem === item;
   const handleClick = () => onSelect(item);
+  const isSelected = selectedItem === item;
   const buttonClass = cx({
     [styles.item]: true,
     [styles.selected]: isSelected

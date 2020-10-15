@@ -2,7 +2,7 @@
 
 exports[`Component :: List #render should match snapshot 1`] = `
 <ul
-  className="root"
+  className="root open-downward"
   role="listbox"
 >
   <ListItem

@@ -25,6 +25,9 @@ exports[`Component :: QuantitySelector #render should match snapshot 1`] = `
     >
       quantity
     </span>
+    <span>
+       (
+    </span>
     <input
       aria-label="quantity"
       className="quantity-number"
@@ -32,8 +35,14 @@ exports[`Component :: QuantitySelector #render should match snapshot 1`] = `
       name="quantity"
       readOnly={true}
       step="1"
-      value="(1)"
+      type="number"
+      value="1"
     />
+    <span
+      className="closing-parenthesis"
+    >
+      )
+    </span>
   </span>
   <ForwardRef
     accessibleText=""

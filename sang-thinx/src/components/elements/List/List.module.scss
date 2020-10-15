@@ -2,14 +2,18 @@
 
 .root {
   position: absolute;
-  top: -1px;
   left: -1px;
   width: 100%;
   background-color: $primary-lightgrey;
   border: 1px solid black;
 
-  &.upward{
+  &.open-upward{
     top: unset;
     bottom: -1px;
+  }
+
+  &.open-downward{
+    top: -1px;
+    bottom: unset;
   }
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import { array, string } from 'prop-types';
 import cx from 'classnames';
 import { connect } from 'react-redux';
-import { getLastBreakPoint } from 'store/ui/selectors';
 import { openZoom } from 'store/ui/actions';
+import { getLastBreakPoint } from 'store/ui/selectors';
 import Slider from 'react-slick';
 import ProductDetailHeroInfo from './ProductDetailHeroInfo';
 import ProductDetailHeroOptions from './ProductDetailHeroOptions';
@@ -23,11 +23,15 @@ export const ProductDetailHero = ({
   openZoom,
   ...otherProps
 }) => {
-  
   const renderImages = () => (
     images && images.map(({ src, alt }, index) => (
       <div className={styles['image-wrapper']} key={index} >
-        <img src={src} alt={alt} onClick={() => openZoom(images)} />
+        <img
+          src={src}
+          alt={alt}
+          onClick={() => openZoom(images)}
+          role='button'
+        />
       </div>
     ))
   );
@@ -90,8 +94,6 @@ const mapStateToProps = state => ({
   lastBreakPoint: getLastBreakPoint(state)
 });
 
-const mapDispatchToProps = {
-  openZoom
-};
+const mapDispatchToProps = { openZoom };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductDetailHero);

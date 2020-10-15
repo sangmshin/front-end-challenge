@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
-import { Link } from 'components/elements';
 import cx from 'classnames';
+import { Link } from 'components/elements';
 import styles from './ProductCard.module.scss';
 
 export const ProductCard = ({
@@ -41,7 +41,7 @@ ProductCard.propTypes = {
 }
 
 ProductCard.defaultProps = {
-  className: '',
+  className: null,
   product_subtitle: '',
   image: {},
   url: null

@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { blockScroll, closeZoom } from 'store/ui/actions';
 import { isZoomOpen, getZoomImages } from 'store/ui/selectors';
 import { Button } from 'components/elements';
-import styles from './Zoom.module.scss';
 import closeButton from 'images/close-btn.svg';
+import styles from './Zoom.module.scss';
 
 export const Zoom = ({ blockScroll, closeZoom, images, isZoomOpen }) => {
   const [isOpen, setOpen] = useState(false);
@@ -18,6 +18,7 @@ export const Zoom = ({ blockScroll, closeZoom, images, isZoomOpen }) => {
   useEffect(() => () => {
     blockScroll(false);
     isOpen && close();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const keyListener = e => {

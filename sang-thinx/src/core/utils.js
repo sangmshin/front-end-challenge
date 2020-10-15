@@ -28,6 +28,6 @@ export function getCurrentBreakPoint() {
 export const isArrayWithLength = arr => Array.isArray(arr) && arr.length > 0;
 
 /**
- * A function with no operation. (for testing)
+ * A function with no operation. (for testing purpose)
  */
 export const noop = () => null;

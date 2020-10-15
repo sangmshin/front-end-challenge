@@ -5,6 +5,11 @@ import {
   SET_LAST_BREAKPOINT
 } from 'store/actionTypes';
 
+/**
+ * Set Latest Breakpoint of browser's width
+ * @param {string} value one of following - xsmall, small, medium, large
+ * @returns {{type, value}}
+ */
 export function setLastBreakPoint(value) {
   return {
     type: SET_LAST_BREAKPOINT,

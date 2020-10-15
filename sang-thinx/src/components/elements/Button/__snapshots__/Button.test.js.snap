@@ -3,7 +3,7 @@
 exports[`Component :: Button #render should match snapshot 1`] = `
 <button
   aria-label="Add to cart"
-  className=""
+  className={null}
   disabled={false}
   onClick={[Function]}
   role="button"

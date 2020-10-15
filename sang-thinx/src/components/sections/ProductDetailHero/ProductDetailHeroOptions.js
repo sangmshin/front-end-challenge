@@ -1,6 +1,5 @@
 import React from 'react';
 import { array, bool, shape, string } from 'prop-types';
-import styles from './ProductDetailHeroOptions.module.scss';
 import {
   Button,
   ColorSelector,
@@ -9,6 +8,7 @@ import {
   QuantitySelector,
 } from 'components/elements';
 import { ADD_TO_CART_TEXT, SIZE_CHART_TEXT } from 'core/constants';
+import styles from './ProductDetailHeroOptions.module.scss';
 
 const ProductDetailHeroOptions = ({
   price,

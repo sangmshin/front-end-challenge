@@ -1,5 +1,12 @@
 import React, { forwardRef } from 'react';
-import { bool, func, node, object, oneOfType, string } from 'prop-types';
+import {
+  bool,
+  func,
+  node,
+  object,
+  oneOfType,
+  string
+} from 'prop-types';
 
 export const Button = forwardRef(({
   accessibleText,
@@ -16,11 +23,11 @@ export const Button = forwardRef(({
 
   return (
     <button
-      ref={ref}
       aria-label={ariaLabel}
       className={className}
-      onClick={clickHandler}
       disabled={disabled}
+      onClick={clickHandler}
+      ref={ref}
       role={role}
       style={style}
       type={type}

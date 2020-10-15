@@ -35,7 +35,7 @@ Link.propTypes = {
 
 Link.defaultProps = {
   accessibleText: '',
-  className: '',
+  className: null,
   onClick: _ => _,
   target: null,
   to: null,

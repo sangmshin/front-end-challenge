@@ -7,7 +7,7 @@ import { noop } from 'core/utils';
 const props = {
   accessibleText: '',
   ariaLabel: 'Add to cart',
-  className: '',
+  className: null,
   disabled: false,
   onClick: noop,
   role: 'button',

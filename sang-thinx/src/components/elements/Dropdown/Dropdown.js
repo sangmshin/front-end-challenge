@@ -55,7 +55,7 @@ Dropdown.propTypes = {
 }
 
 Dropdown.defaultProps = {
-  className: ''
+  className: null
 }
 
 export default Dropdown;

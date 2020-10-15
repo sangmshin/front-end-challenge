@@ -1,17 +1,17 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { array, func, string } from 'prop-types';
+import cx from 'classnames';
 import { ListItem } from 'components/elements';
 import styles from './List.module.scss';
-import cx from 'classnames';
 
 export const List = ({
   items,
   onSelectItem,
   selectedItem,
 }) => {
-  const [shouldListOpenUpward, openUpward] = useState(false);
+  const [shouldOpenUpward, openUpward] = useState(false);
 
-  const listElement = useRef();
+  const listRef = useRef();
   const listItems = items.map(item => (
     <ListItem
       item={item}
@@ -22,8 +22,8 @@ export const List = ({
   ));
 
   useEffect(() => {
-    const elementPositionOnScreen = listElement.current.getBoundingClientRect().top;
-    const enoughSpaceForDropdown = window.innerHeight - listElement.current.clientHeight;
+    const elementPositionOnScreen = listRef.current.getBoundingClientRect().top;
+    const enoughSpaceForDropdown = window.innerHeight - listRef.current.clientHeight;
     const isEnoughSpaceForDropdown = elementPositionOnScreen < enoughSpaceForDropdown;
 
     if (!isEnoughSpaceForDropdown) openUpward(true);
@@ -31,13 +31,14 @@ export const List = ({
   }, []);
 
   const listClass = cx(styles.root, {
-    [styles.upward]: shouldListOpenUpward
+    [styles['open-upward']]: shouldOpenUpward,
+    [styles['open-downward']]: !shouldOpenUpward
   });
   
   return (
     <ul
-      ref={listElement}
       className={listClass}
+      ref={listRef}
       role='listbox'
     >
       {listItems}

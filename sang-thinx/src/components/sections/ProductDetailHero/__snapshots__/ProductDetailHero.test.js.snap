@@ -46,6 +46,7 @@ exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
         <img
           alt="Hi-Waist front 1"
           onClick={[Function]}
+          role="button"
           src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_01_1024x1024.jpg"
         />
       </div>
@@ -56,6 +57,7 @@ exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
         <img
           alt="Hi-Waist front 2"
           onClick={[Function]}
+          role="button"
           src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_02_1024x1024.jpg"
         />
       </div>
@@ -66,6 +68,7 @@ exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
         <img
           alt="Hi-Waist front 3"
           onClick={[Function]}
+          role="button"
           src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_03_1024x1024.jpg"
         />
       </div>
@@ -76,6 +79,7 @@ exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
         <img
           alt="Hi-Waist front 4"
           onClick={[Function]}
+          role="button"
           src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_04_1024x1024.jpg"
         />
       </div>
@@ -86,6 +90,7 @@ exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
         <img
           alt="Hi-Waist side"
           onClick={[Function]}
+          role="button"
           src="https://thinx-assets.s3.amazonaws.com/highwaist_black_side_1024x1024.jpg"
         />
       </div>
@@ -96,6 +101,7 @@ exports[`Component :: ProductDetailHero #render should match snapshot 1`] = `
         <img
           alt="Hi-Waist back"
           onClick={[Function]}
+          role="button"
           src="https://thinx-assets.s3.amazonaws.com/highwaist_black_back_1024x1024.jpg"
         />
       </div>

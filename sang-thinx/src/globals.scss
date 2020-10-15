@@ -48,6 +48,17 @@ body {
     margin: 0;
   }
 
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
   ul {
     padding: 0;
     margin: 0;
@@ -72,7 +83,7 @@ body {
   }
 
   main .page-gutter {
-    padding: 0 30px;
+    padding: 0 5vw;
   }
 
   .page-max-width {
@@ -93,20 +104,8 @@ body {
   }
 }
 
-@media (min-width: $screen-xs) {
-  main section.page-gutter {
-    padding: 0 60px;
-  }
-}
-
 @media (min-width: $screen-md) {
   div.page-max-width {
     max-width: none;
-  }
-}
-
-@media (min-width: $screen-lg) {
-  main .page-gutter {
-    padding: 0 90px;
   }
 }

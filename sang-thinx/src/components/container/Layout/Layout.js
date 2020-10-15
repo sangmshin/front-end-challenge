@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { func, string } from 'prop-types';
-import { connect } from 'react-redux';
 import debounce from 'debounce';
+import { connect } from 'react-redux';
 import { getPageData } from 'store/page-data/actions';
 import { setLastBreakPoint } from 'store/ui/actions';
 import { getLastBreakPoint } from 'store/ui/selectors';
@@ -26,9 +26,9 @@ export const Layout = ({
     window.addEventListener('resize', debouncedHandleResize);
     handleResize();
     getPageData();
-    console.log('mounted');
 
     return () => window.removeEventListener('resize', debouncedHandleResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
