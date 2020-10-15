@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component :: Zoom #render should match snapshot 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="close-button"
+  >
+    <ForwardRef
+      accessibleText="Close"
+      ariaLabel="Close"
+      className={null}
+      disabled={false}
+      onClick={[Function]}
+      role="presentation"
+      style={null}
+      type="button"
+    >
+      <img
+        alt="close-button"
+        src="close-btn.svg"
+      />
+    </ForwardRef>
+  </div>
+  <div
+    key="0"
+  >
+    <img
+      alt="Hi-Waist front 1"
+      className="zoom-image"
+      onClick={[Function]}
+      src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_01_1024x1024.jpg"
+    />
+  </div>
+  <div
+    key="1"
+  >
+    <img
+      alt="Hi-Waist front 2"
+      className="zoom-image"
+      onClick={[Function]}
+      src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_02_1024x1024.jpg"
+    />
+  </div>
+  <div
+    key="2"
+  >
+    <img
+      alt="Hi-Waist front 3"
+      className="zoom-image"
+      onClick={[Function]}
+      src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_03_1024x1024.jpg"
+    />
+  </div>
+  <div
+    key="3"
+  >
+    <img
+      alt="Hi-Waist front 4"
+      className="zoom-image"
+      onClick={[Function]}
+      src="https://thinx-assets.s3.amazonaws.com/highwaist_black_front_04_1024x1024.jpg"
+    />
+  </div>
+  <div
+    key="4"
+  >
+    <img
+      alt="Hi-Waist side"
+      className="zoom-image"
+      onClick={[Function]}
+      src="https://thinx-assets.s3.amazonaws.com/highwaist_black_side_1024x1024.jpg"
+    />
+  </div>
+  <div
+    key="5"
+  >
+    <img
+      alt="Hi-Waist back"
+      className="zoom-image"
+      onClick={[Function]}
+      src="https://thinx-assets.s3.amazonaws.com/highwaist_black_back_1024x1024.jpg"
+    />
+  </div>
+</div>
+`;

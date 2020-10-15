@@ -7,7 +7,7 @@ import { Button } from 'components/elements';
 import styles from './Zoom.module.scss';
 import closeButton from 'images/close-btn.svg';
 
-const Zoom = ({ blockScroll, closeZoom, images, isZoomOpen }) => {
+export const Zoom = ({ blockScroll, closeZoom, images, isZoomOpen }) => {
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
