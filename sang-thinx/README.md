@@ -1,3 +1,38 @@
+Hello, I want to share how this coding challenge from thinx.com was built. It was very exciting one week project by the way. Hopefully I land the role with thinx!
+
+Here are some notable packages I used:
+- Create-React-App: helps me get started with React
+- classnames: tools for classnames
+- debounce: better perform with window events
+- node-sass: for styling with SASS
+- idx: util function for traversing
+- redux: state management tool (single source of truth!)
+- react-slick & slick-carousel: provides Slider components
+
+I didn't use any CSS library as the assignment requested. 
+Since assets (images) were provided internally as well as text data, I did not have to fetch using redux-saga or redux-thunk. I thought of creating an endpoint to fetch json that contains all data but thought it would be a bit overkill. I tried my best to treat this app as if this is real-world project in terms of scalability and component re-usability. Almost all components were thoroughly tested using Enzyme and Jest. 
+
+I tried my best to follow the visual from the two png files, but found a bit hard to display desktop view from 1024px to 1200px since there are not enough space to lay two elements on each side of a model. Instead, I had them both stacked in the left column and had the model shots on the left side. I thought it would create a nicer balance between empty space and elements.
+
+Although none of the elements have link/url as requested, I wrapped them with a '<Link>' components whereever appropriate. (clickable and but no outgoing url).
+
+Thank you for your time to read this and hope you like the site I built.
+Please let me know your thought.
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -26,43 +61,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
