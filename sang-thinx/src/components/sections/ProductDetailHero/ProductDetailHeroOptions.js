@@ -18,7 +18,7 @@ const ProductDetailHeroOptions = ({
   savings,
 }) => (
   <div className={styles.root}>
-    <div>
+    <div className={styles['options-wrapper']}>
       <h2 className={styles.price}>${price}</h2>
       <ColorSelector colors={availableColors} />
       <QuantitySelector max={9} />

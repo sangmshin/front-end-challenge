@@ -42,17 +42,24 @@
 
 @media (min-width: $screen-md) {
   .root {
-    padding: 30px 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0px;
+    width: 25vw;
+    height: 100vh;
+    padding: 0 2px;
 
     .add-to-cart {
       height: 34px;
       padding: 0 15px;
-      font-size: 1rem;
+      font-size: 0.875rem;
     }
 
     .savings {
-      font-size: 1rem;
+      font-size: 0.75rem;
       margin: 10px 0;
     }
   }
@@ -60,13 +67,17 @@
 
 @media (min-width: $screen-lg) {
   .root {
-    display: flex;
-    align-items: center;
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
-    top: 0px;
-    width: 25%;
-    height: 100vh;
-    padding: 0;
+
+    .options-wrapper {
+      max-width: 340px;
+
+      .add-to-cart {
+        font-size: 1rem;
+      }
+
+      .savings {
+        font-size: 1rem;
+      }
+    }
   }
 }

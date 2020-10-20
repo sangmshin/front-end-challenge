@@ -37,47 +37,32 @@ export const ProductDetailHero = ({
   );
 
   const isSmallBreakPoint = /xsmall$/i.test(lastBreakPoint) || /small$/i.test(lastBreakPoint);
-  const isMediumBreakPoint = /medium$/i.test(lastBreakPoint);
-  
-  if (isSmallBreakPoint) {
-    return (
-      <section className={cx(styles.root, 'page-gutter')}>
-        <div className={cx(styles['product-detail-wrapper'], 'page-max-width')}>
-          <Slider {...SLIDER_CONFIG}>
-            {renderImages()}
-          </Slider>
-          <ProductDetailHeroInfo {...otherProps} />
-          <ProductDetailHeroOptions {...otherProps} />
-        </div>
-      </section>
-    )
-  } else if (isMediumBreakPoint) {
-    return (
-      <section className={cx(styles.root, 'page-gutter')}>
-        <div className={cx(styles['product-detail-wrapper'], 'page-max-width')}>
-          <div className={styles['product-images-container']}>
-            {renderImages()}
-          </div>
-          <div className={styles['product-description']}>
-            <ProductDetailHeroInfo {...otherProps} />
-            <ProductDetailHeroOptions {...otherProps} />
-          </div>
-        </div>
-      </section>
-    )
-  } else {
-    return (
-      <section className={cx(styles.root, 'page-gutter')}>
-        <div className={cx(styles['product-detail-wrapper'], 'page-max-width')}>
-          <ProductDetailHeroInfo {...otherProps} />
-          <div className={styles['product-images-container']}>
-            {renderImages()}
-          </div>
-          <ProductDetailHeroOptions {...otherProps} />
-        </div>
-      </section>
-    )
-  }
+  const mobileLayout = (
+    <>
+      <Slider {...SLIDER_CONFIG}>
+        {renderImages()}
+      </Slider>
+      <ProductDetailHeroInfo {...otherProps} />
+      <ProductDetailHeroOptions {...otherProps} />
+    </>
+  );
+  const desktopLayout = (
+    <>
+      <ProductDetailHeroInfo {...otherProps} />
+      <div className={styles['product-images-container']}>
+        {renderImages()}
+      </div>
+      <ProductDetailHeroOptions {...otherProps} />
+    </>
+  );
+
+  return (
+    <section className={cx(styles.root, 'page-gutter')}>
+      <div className={cx(styles['product-detail-wrapper'], 'page-max-width')}>
+        {isSmallBreakPoint ? mobileLayout : desktopLayout}
+      </div>
+    </section>
+  )
 }
 
 ProductDetailHero.propTypes = {

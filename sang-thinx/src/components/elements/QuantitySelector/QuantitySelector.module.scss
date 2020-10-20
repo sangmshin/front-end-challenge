@@ -23,24 +23,20 @@
     flex: 1;
     padding: 3px 10px;
     text-align: center;
-
-    .quantity-text {
-      font-size: 0.875rem;
-    }
+    font-size: 0.875rem;
 
     .quantity-number {
       width: 30px;
       background-color: transparent;
-      font-size: 0.875rem;
+      font-size: inherit;
       border: none;
       text-align: center;
     }
   }
 }
 
-@media (min-width: $screen-md) {
-  .root .quantity-text-wrapper .quantity-text,
-  .root .quantity-text-wrapper .quantity-number {
-      font-size: 1rem;
+@media (min-width: $screen-lg) {
+  .root .quantity-text-wrapper {
+    font-size: 1rem;
   }
 }

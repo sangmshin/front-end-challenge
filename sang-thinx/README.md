@@ -12,7 +12,7 @@ Here are some notable packages I used:
 I didn't use any CSS library as the assignment requested. 
 Since assets (images) were provided internally as well as text data, I did not have to fetch using redux-saga or redux-thunk. I thought of creating an endpoint to fetch json that contains all data but thought it would be a bit overkill. I tried my best to treat this app as if this is real-world project in terms of scalability and component re-usability. Almost all components were thoroughly tested using Enzyme and Jest. 
 
-I tried my best to follow the visual from the two png files, but found a bit hard to display desktop view from 1024px to 1200px since there are not enough space to lay two elements on each side of a model. Instead, I had them both stacked in the left column and had the model shots on the left side. I thought it would create a nicer balance between empty space and elements.
+~~I tried my best to follow the visual from the two png files, but found a bit hard to display desktop view from 1024px to 1200px since there are not enough space to lay two elements on each side of a model. Instead, I had them both stacked in the right column and had the model shots on the left side. I thought it would create a nicer balance between empty space and elements.~~
 
 Although none of the elements have link/url as requested, I wrapped them with a '<Link>' components whereever appropriate. (clickable and but no outgoing url).
 

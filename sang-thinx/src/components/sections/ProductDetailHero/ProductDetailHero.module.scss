@@ -14,20 +14,7 @@
     display: flex;
 
     .product-images-container {
-      max-width: 65%;
-    }
-
-    .product-description {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: sticky;
-      position: -webkit-sticky; /* Safari */
-      top: 0px;
-      width: auto;
-      height: 100vh;
-      max-width: 35%;
-      padding: 0;
+      width: 50vw;
     }
   }
 }
@@ -37,7 +24,15 @@
     justify-content: space-around;
 
     .product-images-container {
-      max-width: 60%;
+      .image-wrapper {
+        display: flex;
+
+        img {
+          width: auto;
+          height: 100vh;
+          margin: 0 auto;
+        } 
+      }
     }
   }
 }

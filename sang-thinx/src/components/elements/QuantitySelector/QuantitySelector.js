@@ -23,7 +23,7 @@ export const QuantitySelector = ({ max }) => {
         -
       </Button>
       <span className={styles['quantity-text-wrapper']} role='presentation'>
-        <span className={styles['quantity-text']}>
+        <span>
           quantity
         </span>
         <span> (</span>
@@ -37,7 +37,7 @@ export const QuantitySelector = ({ max }) => {
           value={`${quantity}`}
           type='number'
         />
-        <span className={styles['closing-parenthesis']}>)</span>
+        <span>)</span>
       </span>
       <Button
         ariaLabel='increase selected quantity'

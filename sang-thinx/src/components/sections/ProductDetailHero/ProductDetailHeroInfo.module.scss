@@ -23,38 +23,42 @@
 @media (min-width: $screen-md) {
   .root {
     padding: 30px 0;
-
-    .info-container > * {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
-
-    .title {
-      font-size: 0.875rem;
-    }
-
-    .subtitle, .description {
-      font-size: 1.125rem;
-      line-height: 2rem;
-    }
-  }
-}
-
-@media (min-width: $screen-lg) {
-  .root {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     position: sticky;
     position: -webkit-sticky; /* Safari */
     top: 0px;
-    width: 25%;
+    width: 25vw;
     height: 100vh;
-    padding: 0;
+    padding: 0 2px;
 
     .info-container {
       max-width: 340px;
+
+      .title {
+        font-size: 0.8125rem;
+      }
+
+      .subtitle, .description {
+        font-size: 0.75rem;
+        line-height: 1.375rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .root {
+    .info-container {
+      .title {
+        font-size: 0.875rem;
+      }
+
+      .subtitle, .description {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
     }
   }
 }

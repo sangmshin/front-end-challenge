@@ -32,12 +32,14 @@ export const Zoom = ({ blockScroll, closeZoom, images, isZoomOpen }) => {
   };
   
   const open = () => {
+    document.body.style.overflowY = 'hidden';
     toggleKeyListener(true);
     blockScroll(true);
     setOpen(true);
   };
 
   const close = () => {
+    document.body.style.overflowY = 'scroll';
     toggleKeyListener(false);
     blockScroll(false);
     setOpen(false);
